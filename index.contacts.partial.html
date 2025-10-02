@@ -1,0 +1,65 @@
+<section id="contacts" class="contacts">
+  <div class="contacts__columns">
+    <div class="contacts__info">
+      <h2 class="contacts__info-title">OUR CONTACTS</h2>
+      <p class="contacts__info-description">
+        Although we work every day, the schedule is quite tight. If you want to
+        record a track or even the full album in our studio, please fill out the
+        form or contact us directly.
+      </p>
+
+      <p class="contacts__label">Address</p>
+      <p class="contacts__details">
+        13 Fitzroy St, Bloomsbury, London W1T 4BQ, UK
+      </p>
+      <p class="contacts__label">Hours</p>
+      <p class="contacts__details">Monday - Sunday: 11 AM - 8 PM</p>
+      <p class="contacts__label">Contacts</p>
+      <p class="contacts__details">
+        <a href="tel:+1 (234) 567 89 00">+1 (234) 567 89 00</a>
+      </p>
+      <p class="contacts__details">
+        <a href="mailto:bird.sounds@email.com">bird.sounds@email.com</a>
+      </p>
+    </div>
+
+    <form
+      class="contacts__form"
+      action="https://formspree.io/f/mjkarond"
+      method="POST"
+    >
+      <label>
+        <input
+          type="text"
+          name="fullname"
+          placeholder="Enter your full name*"
+          required
+        />
+      </label>
+      <label>
+        <input
+          type="tel"
+          name="number"
+          placeholder="Enter your phone number*"
+          required
+        />
+      </label>
+      <label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your e-mail*"
+          required
+        />
+      </label>
+      <label>
+        <textarea
+          name="message"
+          placeholder="Type your message"
+          rows="5"
+        ></textarea>
+      </label>
+      <button class="contacts__btn" type="submit">LET'S MAKE MUSIC!</button>
+    </form>
+  </div>
+</section>
