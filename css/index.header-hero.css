@@ -1,0 +1,92 @@
+.header {
+  background-image: linear-gradient(
+      to right,
+      rgba(120, 86, 85, 0.8),
+      rgba(42, 16, 109, 0.8)
+    ),
+    url("/img/header-hero/background-image.jpeg");
+  background-size: cover;
+  background-position: 37% 50%;
+}
+
+.header__logo-description {
+  color: var(--color-secondary);
+  margin-top: 5px;
+}
+
+.header__top {
+  display: none;
+}
+
+.header__nav {
+  display: none;
+}
+
+.header__btn--book {
+  display: none;
+}
+
+.header__title {
+  font-size: 3.75rem;
+}
+
+.header__subtitle {
+  font-size: 1.125rem;
+  color: var(--color-secondary);
+  margin-top: 35px;
+}
+
+.header__btn--primary {
+  padding: 24px 31px;
+  margin: 55px;
+  font-size: 13.2px;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.header__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 30px 24px;
+  width: 100%;
+  height: auto;
+}
+
+.header__brand {
+  display: inline-block;
+  max-width: 40%;
+}
+
+.header__logo {
+  max-width: 60%;
+}
+
+.header__hero {
+  padding: 130px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__burger {
+  width: 30px;
+  height: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.header__burger-line {
+  display: block;
+  height: 2px;
+  background-color: var(--color-secondary);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
