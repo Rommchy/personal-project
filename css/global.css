@@ -1,0 +1,73 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-main: "Roboto", sans-serif;
+  --font-accent: "Ubuntu", sans-serif;
+
+  --color-primary: #653ed7;
+  --color-secondary: #ffffff;
+  --color-text: #aaa8b1;
+  --color-li: #eee9ff;
+  --color-heading: var(--color-secondary);
+  --color-bg: #201f22;
+  --color-surface: #2a292d;
+  --color-surface-secondary: var(--color-bg);
+  --color-border: var(--color-primary);
+
+  --container-width: 1200px;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-accent);
+  color: var(--color-heading);
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin-inline: auto;
+  /* padding-inline: 15px;
+  padding-block: 6.25rem; */
+}
