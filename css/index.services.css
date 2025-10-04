@@ -1,0 +1,52 @@
+.services {
+  background-image: linear-gradient(
+      to right,
+      rgba(32, 31, 34, 0.99),
+      rgba(32, 31, 34, 0.99)
+    ),
+    url("../img/services/background-image.jpeg");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.services__container {
+  padding: 90px 0px;
+}
+
+.services__title {
+  font-size: 34px;
+  text-align: center;
+  padding: 0 15px;
+  letter-spacing: 3.4px;
+}
+
+.services__list {
+  margin-top: 45px;
+}
+
+.services__list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding: 0 15px;
+}
+
+.services__item-image {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  width: 50px;
+  height: 50px;
+  padding: 12px;
+  border-radius: 30px;
+}
+
+.services__item-title {
+  margin-top: 20px;
+}
+
+.services__item-description {
+  margin-top: 20px;
+  text-align: center;
+}

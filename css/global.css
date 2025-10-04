@@ -15,7 +15,7 @@
   --color-text: #aaa8b1;
   --color-li: #eee9ff;
   --color-heading: var(--color-secondary);
-  --color-bg: #201f22;
+  --color-bg: rgb(32, 31, 34);
   --color-surface: #2a292d;
   --color-surface-secondary: var(--color-bg);
   --color-border: var(--color-primary);
@@ -30,6 +30,10 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+}
+
+svg {
+  color: var(--color-secondary);
 }
 
 html {
