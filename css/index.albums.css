@@ -7,6 +7,7 @@
     url("../img/albums/background-image.jpeg");
   object-fit: cover;
   background-position: 44% 37%;
+  background-attachment: fixed;
 }
 
 .albums__title {
