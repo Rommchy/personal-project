@@ -1,0 +1,36 @@
+.albums {
+  padding: 90px 24px;
+  background-image: linear-gradient(
+      rgba(66, 41, 141, 0.95),
+      rgba(66, 41, 141, 0.95)
+    ),
+    url("../img/albums/background-image.jpeg");
+  object-fit: cover;
+  background-position: 44% 37%;
+}
+
+.albums__title {
+  font-size: 34px;
+  text-align: center;
+  letter-spacing: 3.4px;
+}
+.albums__gallery {
+  list-style: none;
+}
+
+.albums__arrow-btn {
+  display: flex;
+  padding: 6px;
+  background-color: #e3dfee;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.albums__gallery-item:not(:first-child) {
+  display: none;
+}
+
+.albums__carousel {
+  display: flex;
+  align-items: center;
+}
