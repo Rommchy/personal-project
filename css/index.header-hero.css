@@ -45,13 +45,15 @@
 }
 
 .header__menu-link {
-  margin: 10px 5px;
+  margin: 7.5px 5px;
+  letter-spacing: 1.2px;
 }
 
 .header__mobile-menu.show {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding-top: 90px;
+  justify-content: start;
   align-items: center;
 }
 
@@ -63,7 +65,7 @@
 }
 
 .header__menu-details {
-  margin-top: 30px;
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
   gap: 20px;
