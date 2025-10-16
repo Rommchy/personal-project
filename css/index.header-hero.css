@@ -98,13 +98,13 @@
 }
 
 .header__btn--primary {
-  padding: 24px 31px;
-  margin: 55px;
+  padding: 20px 31px;
+  margin-top: 45px;
   font-size: 0.825rem;
   color: var(--color-secondary);
   background-color: var(--color-primary);
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 2.64px;
 }
 
 .header__main {

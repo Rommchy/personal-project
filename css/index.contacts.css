@@ -8,8 +8,13 @@
     url("../img/contacts/background-image.jpeg");
   background-size: cover;
   background-position: 50% 50%;
-  background-attachment: fixed;
 }
+
+/* @media (min-width: 768px) {
+  .contacts {
+    background-attachment: fixed;
+  }
+} */
 
 .contacts__content {
   padding: 0 24px;

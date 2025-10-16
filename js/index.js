@@ -1,5 +1,6 @@
 function init() {
   import("./index.header-hero.js");
+  import(".index.albums.js");
 }
 
 const totalPartials = document.querySelectorAll(

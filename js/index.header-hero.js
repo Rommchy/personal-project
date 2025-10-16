@@ -4,7 +4,7 @@ const headerMobileMenu = document.querySelector(".header__mobile-menu");
 const headerMenuLink = document.querySelectorAll(".header__menu-link");
 const headerMenuBtn = document.querySelector(".header__menu-btn");
 
-console.log(headerMenuLink);
+// console.log(headerMenuLink);
 
 headerBurger.addEventListener("click", () => {
   // console.log("Бургер натиснуто!");
