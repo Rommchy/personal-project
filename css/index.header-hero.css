@@ -21,6 +21,20 @@
   .header__top {
     display: none;
   }
+
+  .header__btn--book {
+    display: none;
+  }
+  .header__hero {
+    padding: 130px 24px;
+  }
+  .header__title {
+    font-size: 3.75rem;
+  }
+
+  .header__main {
+    padding: 0 32px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -33,26 +47,79 @@
   }
 
   .header__top {
-    display: flex;
+    display: block;
   }
+
+  .header__hero {
+    padding: 270px 0;
+  }
+
+  .header__title {
+    font-size: 90px;
+  }
+}
+
+.header__btn {
+  transition: 0.3s ease;
+  background-color: var(--color-primary);
+  font-size: 10.8px;
+  font-weight: 700;
+  letter-spacing: 2.16px;
+  padding: 13px 17.5px;
+  color: var(--color-secondary);
+}
+
+.header__btn:hover {
+  background-color: var(--color-secondary);
+  color: black;
 }
 
 .header__nav {
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  flex: 1;
+  flex-wrap: wrap;
   color: var(--color-secondary);
   font-size: 14px;
   letter-spacing: 1.4px;
 }
 
-.header__top {
-  padding: 10px 172px;
+.header__nav-link {
+  position: relative;
+  transition: 0.3s ease;
+  padding-bottom: 4px;
+}
+
+.header__nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.header__nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.header__top-content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__top-item-container {
   display: flex;
   flex-direction: row;
+  gap: 20px;
   justify-content: space-between;
+  padding: 10px 15px;
 }
 
 .header__top-item {
@@ -76,8 +143,6 @@
 
 .header__top {
   background-color: var(--color-primary);
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .header__mobile-menu {
@@ -130,12 +195,7 @@
   padding: 13px 17.5px;
 }
 
-.header__btn--book {
-  display: none;
-}
-
 .header__title {
-  font-size: 3.75rem;
   letter-spacing: 0.75rem;
 }
 
@@ -158,8 +218,9 @@
 .header__main {
   display: flex;
   justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
   align-items: center;
-  padding: 30px 24px;
   position: relative;
   z-index: 2;
 }
@@ -170,7 +231,6 @@
 }
 
 .header__hero {
-  padding: 130px 24px;
   text-align: center;
   display: flex;
   flex-direction: column;
