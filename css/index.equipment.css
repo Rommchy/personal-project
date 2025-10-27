@@ -5,14 +5,52 @@
       rgba(32, 31, 34, 0.97)
     ),
     url("../img/equipment/background-image.jpeg");
-  padding: 90px 24px;
+}
+
+@media (max-width: 992px) {
+  .equipment {
+    padding: 90px 24px;
+  }
+
+  .equipment__lists {
+    flex-direction: column;
+    gap: 3.125rem;
+  }
+
+  .equipment__title {
+    font-size: 2.125rem;
+    letter-spacing: 3.4px;
+  }
+
+  .equipment__list-title {
+    font-size: 1.375rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .equipment {
+    padding: 100px 24px;
+  }
+
+  .equipment__lists {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6.25rem;
+  }
+
+  .equipment__title {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+
+  .equipment__list-title {
+    font-size: 24px;
+  }
 }
 
 .equipment__lists {
   margin-top: 45px;
   display: flex;
-  flex-direction: column;
-  gap: 3.125rem;
 }
 
 .equipment__list {
@@ -20,13 +58,7 @@
 }
 
 .equipment__title {
-  font-size: 2.125rem;
   text-align: center;
-  letter-spacing: 3.4px;
-}
-
-.equipment__list-title {
-  font-size: 1.375rem;
 }
 
 .equipment__list-content {

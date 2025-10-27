@@ -1,5 +1,4 @@
 .albums {
-  padding: 90px 24px;
   background-image: linear-gradient(
       rgba(66, 41, 141, 0.95),
       rgba(66, 41, 141, 0.95)
@@ -9,16 +8,58 @@
   background-position: 44% 37%;
 }
 
-/* @media (min-width: 768px) {
+@media (max-width: 992px) {
+  .albums {
+    padding: 90px 24px;
+  }
+
+  .albums__title {
+    font-size: 34px;
+    letter-spacing: 3.4px;
+  }
+
+  .albums__arrow-btn {
+    width: 24px;
+    height: 24px;
+    padding: 6px;
+    background-color: #e3dfee;
+    border-radius: 30px;
+  }
+
+  .albums__carousel {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 992px) {
   .albums {
     background-attachment: fixed;
+    padding: 100px 24px;
   }
-} */
+
+  .albums__gallery-item-image {
+    width: 204px;
+    height: auto;
+  }
+
+  .albums__title {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+
+  .albums__arrow-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .albums__carousel {
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+}
 
 .albums__title {
-  font-size: 34px;
   text-align: center;
-  letter-spacing: 3.4px;
 }
 .albums__gallery {
   list-style: none;
@@ -26,9 +67,6 @@
 
 .albums__arrow-btn {
   display: flex;
-  padding: 6px;
-  background-color: #e3dfee;
-  border-radius: 30px;
   cursor: pointer;
 }
 
