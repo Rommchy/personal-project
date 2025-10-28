@@ -1,6 +1,17 @@
+@media (max-width: 991px) {
+  .location {
+    height: 936px;
+  }
+}
+
+@media (min-width: 991px) {
+  .location {
+    height: 600px;
+  }
+}
+
 .location {
   width: 100%;
-  height: 936px;
 }
 
 .location__iframe {

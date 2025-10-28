@@ -1,9 +1,71 @@
 .footer__top {
   padding: 60px 30px 24px 24px;
   display: flex;
-  flex-direction: column;
-  /* position: relative;
-  border-bottom: 1px solid gray; */
+}
+
+@media (max-width: 991px) {
+  .footer__top {
+    flex-direction: column;
+  }
+
+  .footer__nav {
+    flex-direction: column;
+    font-size: 16px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__hr {
+    width: 90%;
+  }
+
+  .footer__brand {
+    align-items: center;
+  }
+
+  .footer__nav {
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer__top {
+    flex-direction: row;
+  }
+
+  .footer__nav {
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+    justify-content: end;
+    flex: 1;
+    font-size: 14px;
+  }
+
+  .footer__bottom {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer__hr {
+    width: 100%;
+  }
+
+  .footer__brand {
+    align-items: start;
+  }
+
+  .footer__nav-link:hover {
+    text-decoration: underline var(--color-secondary);
+    color: var(--color-primary);
+  }
 }
 
 .footer__hr {
@@ -11,24 +73,13 @@
   border: none;
   background-color: var(--color-secondary);
   margin: 0 auto;
-  width: 90%;
   opacity: 0.2;
 }
-
-/* .footer__top::after {
-  content: "";
-  position: absolute;
-  width: 80%;
-  height: 1px;
-  bottom: 1px;
-  background-color: aliceblue;
-} */
 
 .footer__brand {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .footer__logo {
@@ -43,13 +94,8 @@
 
 .footer__nav {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
   color: var(--color-secondary);
   letter-spacing: 1.6px;
-  margin-top: 50px;
 }
 
 .footer__nav-link {
@@ -58,9 +104,6 @@
 
 .footer__bottom {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 15px 0;
   font-size: 14px;
   color: var(--color-secondary);

@@ -1,5 +1,4 @@
 .contacts {
-  padding: 90px 0;
   background-image: linear-gradient(
       to top,
       rgba(120, 86, 85, 0.9),
@@ -11,6 +10,10 @@
 }
 
 @media (max-width: 991px) {
+  .contacts {
+    padding: 90px 0;
+  }
+
   .contacts__content {
     flex-direction: column;
     gap: 3.125rem;
@@ -24,11 +27,26 @@
   .contacts__content {
     padding: 0 24px;
   }
+
+  .contacts__label {
+    font-size: 22px;
+  }
+
+  .contacts__form {
+    padding: 43px 55px;
+  }
+
+  .contacts__list {
+    margin-top: 25px;
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 
 @media (min-width: 992px) {
   .contacts {
     background-attachment: fixed;
+    padding: 100px 0;
   }
 
   .contacts__content {
@@ -47,7 +65,7 @@
   .contacts__item {
     display: flex;
     flex-direction: row;
-    gap: 3.125rem;
+    justify-content: start;
     align-items: center;
   }
 
@@ -57,7 +75,6 @@
 
   .contacts__list {
     margin-top: 50px;
-    display: flex;
     flex-direction: column;
     gap: 1.25rem;
   }
@@ -69,8 +86,46 @@
 
   .contacts__content {
     padding: 0 40px;
-    margin: 0 10px;
   }
+
+  .contacts__social-link:hover {
+    background-color: #8768e0;
+  }
+
+  .contacts__btn:hover {
+    background-color: var(--color-secondary);
+    color: black;
+  }
+
+  .contacts__details-wrapper {
+    display: block;
+    width: 60%;
+  }
+
+  .contacts__details {
+    display: block;
+  }
+
+  .contacts__label {
+    display: block;
+    width: 40%;
+  }
+
+  .contacts__label {
+    font-size: 24px;
+  }
+
+  .contacts__form {
+    padding: 70px 100px;
+  }
+
+  .contacts__link:hover {
+    text-decoration: underline;
+  }
+}
+
+.contacts__list {
+  display: flex;
 }
 
 .contacts__info {
@@ -95,15 +150,13 @@
 }
 
 .contacts__label {
-  font-size: 22px;
   font-family: Ubuntu;
   font-weight: 700;
 }
 
 .contacts__details {
   color: var(--color-li);
-  display: block;
-  width: 100%;
+  font-weight: 450;
 }
 
 .contacts__form {
@@ -113,11 +166,9 @@
   align-items: center;
   gap: 1.5rem;
   background-color: #201f22;
-  padding: 43px 55px;
 }
 
 .contacts__form-label {
-  margin-top: 12px;
   background-color: #2a292d99;
   padding: 19px 21px;
   width: 100%;
@@ -141,6 +192,7 @@
 }
 
 .contacts__btn {
+  transition: 0.3s ease;
   padding: 17.5px;
   width: 100%;
   margin-top: 56px;
@@ -161,6 +213,7 @@
 }
 
 .contacts__social-link {
+  transition: 0.3s ease;
   padding: 10px;
   background-color: var(--color-primary);
   cursor: pointer;
