@@ -1,14 +1,45 @@
 .albums {
-  background-image: linear-gradient(
-      rgba(66, 41, 141, 0.95),
-      rgba(66, 41, 141, 0.95)
-    ),
+  background-image:
+    linear-gradient(rgba(66, 41, 141, 0.95), rgba(66, 41, 141, 0.95)),
     url("../img/albums/background-image.jpeg");
   object-fit: cover;
   background-position: 44% 37%;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1199px) {
+  .albums__arrow-btn-svg {
+    flex: 0 0 32px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+
+  #back-arrow {
+    padding-right: 2px;
+  }
+
+  #forward-arrow {
+    padding-left: 2px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .albums__arrow-btn-svg {
+    flex: 0 0 50px;
+  }
+
+  .albums__arrow-btn {
+    color: #ffffff;
+    opacity: 70%;
+    transition: all 0.5s;
+  }
+
+  .albums__arrow-btn:hover {
+    opacity: 90%;
+  }
+}
+
+@media (max-width: 990px) {
   .albums {
     padding: 90px 24px;
   }
@@ -18,20 +49,20 @@
     letter-spacing: 3.4px;
   }
 
-  .albums__arrow-btn {
-    width: 24px;
-    height: 24px;
-    padding: 6px;
-    background-color: #e3dfee;
-    border-radius: 30px;
-  }
-
   .albums__carousel {
     justify-content: center;
   }
+
+  .albums__gallery {
+    flex-direction: row;
+  }
+
+  .albums__gallery-item {
+    flex: 0 0 calc((100% - 2 * 20px) / 3);
+  }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 991px) {
   .albums {
     background-attachment: fixed;
     padding: 100px 24px;
@@ -47,14 +78,29 @@
     letter-spacing: 4px;
   }
 
-  .albums__arrow-btn {
-    width: 50px;
-    height: 50px;
-  }
-
   .albums__carousel {
     justify-content: space-between;
     margin-top: 50px;
+  }
+
+  .albums__gallery-item {
+    flex: 0 0 calc((100% - 4 * 20px) / 5);
+  }
+
+  .albums__gallery {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 766px) {
+  .albums__gallery-item {
+    flex: 0 0 calc((100% - 1 * 20px) / 2);
+  }
+}
+
+@media (max-width: 478px) {
+  .albums__gallery-item {
+    flex: 0 0 100%;
   }
 }
 
@@ -62,7 +108,10 @@
   text-align: center;
 }
 .albums__gallery {
+  display: flex;
+  gap: 20px;
   list-style: none;
+  transition: transform 0.5s;
 }
 
 .albums__arrow-btn {
@@ -71,9 +120,13 @@
 }
 
 .albums__gallery-item {
-  display: none;
+  /* display: none; */
   justify-content: center;
   align-items: center;
+}
+
+.albums__viewport {
+  overflow: hidden;
 }
 
 .albums__gallery-item:first-child {

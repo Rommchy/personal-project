@@ -32,9 +32,9 @@ svg {
   max-width: 100%;
 }
 
-svg {
+/* svg {
   color: var(--color-secondary);
-}
+} */
 
 html {
   font-size: 16px;

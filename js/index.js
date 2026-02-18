@@ -1,10 +1,10 @@
 function init() {
   import("./index.header-hero.js");
-  import(".index.albums.js");
+  import("./index.albums.js");
 }
 
 const totalPartials = document.querySelectorAll(
-  '[hx-trigger="load"], [data-hx-trigger="load"]'
+  '[hx-trigger="load"], [data-hx-trigger="load"]',
 ).length;
 let loadedPartialsCount = 0;
 
