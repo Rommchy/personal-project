@@ -8,7 +8,9 @@
 
 @media (max-width: 1199px) {
   .albums__arrow-btn-svg {
-    flex: 0 0 32px;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
     color: rgb(0, 0, 0);
     background-color: #ffffff;
     border-radius: 50%;
@@ -25,7 +27,9 @@
 
 @media (min-width: 1200px) {
   .albums__arrow-btn-svg {
-    flex: 0 0 50px;
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
   }
 
   .albums__arrow-btn {
