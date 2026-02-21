@@ -4,12 +4,6 @@ const track = document.querySelector(".albums__gallery");
 const items = document.querySelectorAll(".albums__gallery-item");
 const viewport = document.querySelector(".albums__viewport");
 
-// const step = 220; // Робимо функцію яка обраховує степ
-// const visibleEl = 5; // Робимо функцію яка обраховує к-сть елементів
-// let maxPosition = Math.round(viewport.offsetWidth / 190) - 5;
-// console.log(innerWidth);
-// console.log(maxPosition);
-
 let position = 0;
 
 function getStep() {
